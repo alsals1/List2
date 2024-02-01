@@ -9,7 +9,7 @@ lst = [64, 25, 10, 22, 11]
 
 def SelectionSort(a,N):
     for i in range(N-1):
-        min_idx = i # 최소 인덱스를 임의로 i로 가정
+        min_idx = i # 최소 인덱스를 임의로 i로 가정 # 처음엔 맨 앞 0 이 됨.
         for j in range(i+1, N): # 최소 인덱스 이후 나머지들. j
             if a[min_idx]>a[j] : # 새로운 최솟값 등장하면
                 min_idx = j # 변수 새로 설정
